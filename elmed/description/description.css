@@ -111,3 +111,44 @@
     }
 
     /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1024*/
+
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ 1500*/
+    @media(min-width:1500px) {
+        .description__image {
+            width: 46.7rem;
+            height: 38.9rem;
+        }
+
+        .description__text-container {
+            padding: 4.7rem 3.2rem;
+        }
+
+        .description__text {
+            height: 8.8rem;
+        }
+
+        .description__btn-show {
+            margin-top: 1.6rem;
+        }
+
+        .description__wrapper-blur::after {
+            bottom: 10rem;
+            right: 44rem;
+        }
+
+        .description__wrapper-blur::before {
+            content: '';
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: -1;
+            background-color: var(--lighter-blue);
+            width: 11.2rem;
+            height: 11.2rem;
+            left: 28rem;
+            bottom: -6rem;
+        }
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1500*/
