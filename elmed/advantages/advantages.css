@@ -1,0 +1,59 @@
+  /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
+  .advantages__img {
+      width: 15.8rem;
+      height: 14.9rem;
+      position: relative;
+  }
+
+  .advantages__img::before {
+      content: '';
+      position: absolute;
+      width: 20.3rem;
+      height: 20.3rem;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(50% 50% at 50% 50%, #ffffff 43.23%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 50%;
+      z-index: -1;
+  }
+
+  .advantages__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .advantages__img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 21.9rem;
+      height: 21.9rem;
+      margin: 5rem auto 0;
+      background: rgba(166, 209, 238, 0.2);
+      border-radius: 50%;
+      position: relative;
+  }
+
+  .advantages__img-container::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 25.9rem;
+      height: 25.9rem;
+      border: 0.1rem solid var(--lighter-blue);
+      border-radius: 50%;
+  }
+
+  .advantages__title-blur::after {
+      width: 11.2rem;
+      height: 11.2rem;
+      background-color: var(--light-blue);
+      top: -8rem;
+      right: -2rem;
+  }
+
+  /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */

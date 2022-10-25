@@ -63,6 +63,27 @@ section+div {
     line-height: 2.2rem;
 }
 
+.text li {
+    padding-left: 1.7rem;
+    position: relative;
+}
+
+.text li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background-color: var(--lighter-blue);
+}
+
+.text li+li {
+    margin-top: 1.6rem;
+}
+
 .text b {
     font-weight: 700;
 }
