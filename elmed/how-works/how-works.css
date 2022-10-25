@@ -1,0 +1,53 @@
+/* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? */
+.count {
+    counter-reset: count__item;
+    position: relative;
+}
+
+.how-works::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    top: 28rem;
+    left: 7rem;
+}
+
+.count__item {
+    padding: 0 0.8rem 1.2rem;
+    border-radius: 1.6rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(23px);
+    max-width: 46.1rem;
+    width: 100%;
+}
+
+.count__item+.count__item {
+    margin-top: 2.4rem;
+}
+
+.count__item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.count__item-text::before {
+    counter-increment: count__item;
+    content: counter(count__item);
+    font-family: 'UniNeue';
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+    font-weight: 800;
+    color: var(--white);
+    -webkit-text-stroke: 0.1rem var(--blue);
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    align-self: center;
+}
+
+.count__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? */
