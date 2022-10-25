@@ -5,6 +5,7 @@
     --light-blue: #B2D4FF;
     --lighter-blue: #A6CDFF;
     --blue: #006DB8;
+    --blue-hover: #0096FD;
 }
 
 html {
@@ -18,6 +19,10 @@ body {
     position: relative;
     font-style: normal;
     background-color: var(--white);
+}
+
+svg {
+    fill: transparent;
 }
 
 section+section {
@@ -88,20 +93,35 @@ section+div {
     display: inline-flex;
     align-items: center;
     padding-right: 3.2rem;
+    transition: color 0.3s ease;
 }
 
-.btn-show::after {
-    content: "";
+.btn-show:hover {
+    color: var(--blue-hover);
+}
+
+.btn-show:hover .btn-show__arrow svg {
+    stroke: var(--blue-hover);
+}
+
+.btn-show__arrow {
     position: absolute;
     right: 0.1rem;
     width: 2.4rem;
     height: 2.4rem;
-    background-image: url('image/arrow-down.svg');
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.btn-show__arrow svg {
+    transition: stroke 0.3s ease;
+    stroke: var(--blue);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn-show.active .btn-show__hide {
@@ -112,7 +132,7 @@ section+div {
     display: none;
 }
 
-.btn-show.active::after {
+.btn-show.active .btn-show__arrow {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
