@@ -20,6 +20,7 @@
         padding: 2.4rem 1.6rem;
         border-radius: 1.6rem;
         background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(23px);
     }
 
     .description__text {
@@ -46,3 +47,36 @@
     }
 
     /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ */
+
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ 668*/
+    @media(min-width:668px) {
+        .description__text-container {
+            padding: 1.2rem;
+        }
+
+        .description__wrapper {
+            flex-direction: row;
+        }
+
+        .description__image {
+            flex-shrink: 0;
+            margin-right: 0.1rem;
+        }
+
+        .description__text {
+            height: 15.4rem;
+        }
+
+        .description__btn-show {
+            margin-top: 1.2rem;
+            text-align: left;
+        }
+
+        .description__wrapper-blur::after {
+            right: -1.8rem;
+            top: 0rem;
+            filter: blur(100px);
+        }
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 668*/
