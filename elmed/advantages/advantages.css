@@ -298,3 +298,46 @@
   }
 
   /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1024*/
+
+  /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1500*/
+  @media(min-width:1500px) {
+      .advantages__text-item-1 {
+          right: 41rem;
+      }
+
+      .advantages__text-item-2 {
+          right: 18rem;
+      }
+
+      .advantages__text-item-3 {
+          right: 21.3rem;
+      }
+
+      .advantages__text-item-4 {
+          left: 16.5rem;
+      }
+
+      .advantages__text-item-5 {
+          left: 25.4rem;
+      }
+
+      .advantages__text-item-6 {
+          left: 22rem;
+      }
+
+      .advantages__title-blur::after {
+          top: 10rem;
+          right: 24rem;
+      }
+
+      .advantages__title-blur::before {
+          background-color: var(--light-blue);
+          top: unset;
+          bottom: -54rem;
+          left: 18rem;
+          width: 12.1rem;
+          height: 12.1rem;
+      }
+  }
+
+  /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1500*/
