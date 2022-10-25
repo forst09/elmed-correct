@@ -76,6 +76,7 @@ section+div {
     position: absolute;
     display: block;
     border-radius: 50%;
+    -webkit-filter: blur(75px);
     filter: blur(75px);
     z-index: -1;
 }
@@ -90,9 +91,15 @@ section+div {
     line-height: 2rem;
     color: var(--blue);
     position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-right: 3.2rem;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
@@ -117,10 +124,13 @@ section+div {
 }
 
 .btn-show__arrow svg {
+    -webkit-transition: stroke 0.3s ease;
+    -o-transition: stroke 0.3s ease;
     transition: stroke 0.3s ease;
     stroke: var(--blue);
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
