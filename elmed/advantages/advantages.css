@@ -181,3 +181,120 @@
   }
 
   /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 668*/
+
+  /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1024*/
+  @media(min-width:1024px) {
+      .advantages__wrapper {
+          margin-top: 8.3rem;
+      }
+
+      .advantages__img-container {
+          width: 33rem;
+          height: 33rem;
+          margin: 0 auto;
+      }
+
+      .advantages__img-container::before {
+          width: 39.2rem;
+          height: 39.2rem;
+      }
+
+      .advantages__img {
+          width: 31.5rem;
+          height: 25.8rem;
+      }
+
+      .advantages__img::before {
+          width: 30.7rem;
+          height: 30.7rem;
+      }
+
+      .advantages__text-item-1 {
+          top: -3rem;
+          right: 24.3rem;
+      }
+
+      .advantages__text-item-1::before {
+          top: 0.8rem !important;
+          left: -3.4rem !important;
+      }
+
+      .advantages__text-item-2 {
+          right: 1.3rem;
+          top: 5.4rem;
+          max-width: 25.4rem;
+      }
+
+      .advantages__text-item-2::before {
+          left: -3.2rem !important;
+          top: 0.8rem !important;
+      }
+
+      .advantages__text-item-3 {
+          bottom: 1.9rem;
+          right: 4.8rem;
+          max-width: 28.4rem;
+      }
+
+      .advantages__text-item-3::before {
+          left: -3.3rem !important;
+          top: 0.7rem !important;
+      }
+
+      .advantages__text-item-4 {
+          bottom: 1.7rem;
+          max-width: 30.6rem;
+          left: 0;
+      }
+
+      .advantages__text-item-4::before {
+          right: -3.3rem !important;
+          top: 3rem !important;
+      }
+
+      .advantages__text-item-5 {
+          max-width: 16.3rem;
+          top: 10.2rem;
+          left: 8.8rem;
+      }
+
+      .advantages__text-item-5::before {
+          right: -3.4rem !important;
+          top: 1rem !important;
+      }
+
+      .advantages__text-item-6 {
+          max-width: 27.3rem;
+          top: -2rem;
+          left: 5.4rem;
+      }
+
+      .advantages__text-item-6::before {
+          right: -3.4rem !important;
+          top: 0.8rem !important;
+      }
+
+      .advantages__title-blur::after {
+          width: 14.6rem;
+          height: 14.6rem;
+          top: 18rem;
+          right: 6rem;
+      }
+
+      .advantages__title-blur::before {
+          content: '';
+          position: absolute;
+          display: block;
+          border-radius: 50%;
+          -webkit-filter: blur(100px);
+          filter: blur(100px);
+          z-index: -1;
+          width: 11.2rem;
+          height: 11.2rem;
+          background-color: var(--lighter-blue);
+          left: 11rem;
+          top: -8rem;
+      }
+  }
+
+  /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 1024*/
