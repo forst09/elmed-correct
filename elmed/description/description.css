@@ -1,0 +1,48 @@
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ */
+    .description__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description__image {
+        width: 25.7rem;
+        height: 21.5rem;
+    }
+
+    .description__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .description__text-container {
+        padding: 2.4rem 1.6rem;
+        border-radius: 1.6rem;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    .description__text {
+        height: 24.2rem;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .description__btn-show {
+        text-align: center;
+    }
+
+    .description__btn-show .btn-show {
+        width: auto;
+        max-width: 28.8rem;
+    }
+
+    .description__wrapper-blur::after {
+        width: 11.2rem;
+        height: 11.2rem;
+        background-color: var(--light-blue);
+        top: -9rem;
+        right: -1rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ */
