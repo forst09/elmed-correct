@@ -1,6 +1,6 @@
   /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
-  body {
-      padding-top: 1000px;
+  .advantages {
+      overflow-x: clip;
   }
 
   .advantages__img {
@@ -16,7 +16,10 @@
       height: 20.3rem;
       left: 50%;
       top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+      background: -o-radial-gradient(50% 50%, 50% 50%, #ffffff 43.23%, rgba(255, 255, 255, 0) 100%);
       background: radial-gradient(50% 50% at 50% 50%, #ffffff 43.23%, rgba(255, 255, 255, 0) 100%);
       border-radius: 50%;
       z-index: -1;
@@ -25,12 +28,19 @@
   .advantages__img img {
       width: 100%;
       height: 100%;
+      -o-object-fit: cover;
       object-fit: cover;
   }
 
   .advantages__img-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       width: 21.9rem;
       height: 21.9rem;
@@ -45,6 +55,8 @@
       position: absolute;
       left: 50%;
       top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       width: 25.9rem;
       height: 25.9rem;
@@ -61,11 +73,19 @@
   }
 
   .advantages__text-item {
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
+      -webkit-transition: -webkit-transform 1s ease;
+      transition: -webkit-transform 1s ease;
+      -o-transition: transform 1s ease;
       transition: transform 1s ease;
+      transition: transform 1s ease, -webkit-transform 1s ease;
   }
 
   .advantages__text-item.element-show {
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
       transform: translateX(0%);
   }
 
@@ -95,6 +115,7 @@
       }
 
       .advantages__img img {
+          -o-object-fit: contain;
           object-fit: contain;
       }
 
@@ -112,6 +133,12 @@
       .advantages__text li {
           position: absolute;
           padding: 0;
+      }
+
+      .advantages__text-item {
+          -webkit-transform: unset;
+          -ms-transform: unset;
+          transform: unset;
       }
 
       .advantages__text-item-1 {
@@ -185,6 +212,7 @@
           height: 13.3rem;
           top: 8rem;
           right: -6rem;
+          -webkit-filter: blur(100px);
           filter: blur(100px);
       }
 
