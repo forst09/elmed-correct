@@ -57,3 +57,127 @@
   }
 
   /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
+
+  /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 668*/
+  @media(min-width:668px) {
+      .advantages__img-container {
+          width: 27.5rem;
+          height: 27.5rem;
+          margin: 2.5rem auto 0;
+      }
+
+      .advantages__img-container::before {
+          width: 32.5rem;
+          height: 32.5rem;
+      }
+
+      .advantages__img {
+          width: 21.3rem;
+          height: 17.6rem;
+      }
+
+      .advantages__img::before {
+          width: 25.5rem;
+          height: 25.5rem;
+      }
+
+      .advantages__img img {
+          object-fit: contain;
+      }
+
+      .advantages__wrapper {
+          margin-top: 9.5rem;
+          position: relative;
+      }
+
+      .advantages__text {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+      }
+
+      .advantages__text li {
+          position: absolute;
+          padding: 0;
+      }
+
+      .advantages__text-item-1 {
+          top: -5.5rem;
+          right: 16.3rem;
+      }
+
+      .advantages__text-item-1::before {
+          top: 2.5rem !important;
+          left: -1.5rem !important;
+      }
+
+      .advantages__text-item-2 {
+          right: 0rem;
+          top: -1.6rem;
+          max-width: 14.5rem;
+      }
+
+      .advantages__text-item-2::before {
+          left: -3.7rem !important;
+          top: 2.9rem !important;
+      }
+
+      .advantages__text-item-3 {
+          bottom: -2.5rem;
+          right: 4.5rem;
+          max-width: 13.5rem;
+      }
+
+      .advantages__text-item-3::before {
+          left: -6.1rem !important;
+          top: 2.5rem !important;
+      }
+
+      .advantages__text-item-4 {
+          bottom: -3.25rem;
+          max-width: 15.8rem;
+          left: 0;
+      }
+
+      .advantages__text-item-4::before {
+          left: unset !important;
+          right: -7.2rem !important;
+          top: 3.5rem !important;
+      }
+
+      .advantages__text-item-5 {
+          max-width: 10.5rem;
+          top: 10.2rem;
+      }
+
+      .advantages__text-item-5::before {
+          left: unset !important;
+          right: -4rem !important;
+          top: 3rem !important;
+      }
+
+      .advantages__text-item-6 {
+          max-width: 18.4rem;
+          top: -2.6rem;
+      }
+
+      .advantages__text-item-6::before {
+          left: unset !important;
+          right: -0.7rem !important;
+          top: 2.8rem !important;
+      }
+
+      .advantages__title-blur::after {
+          width: 13.3rem;
+          height: 13.3rem;
+          top: 8rem;
+          right: -6rem;
+          filter: blur(100px);
+      }
+
+      .advantages .wrapper {
+          overflow-x: clip;
+      }
+  }
+
+  /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА 668*/
