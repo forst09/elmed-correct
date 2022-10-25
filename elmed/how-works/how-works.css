@@ -126,3 +126,23 @@
 }
 
 /* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1024*/
+
+/* НАЧАЛО СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1500*/
+@media(min-width:1500px) {
+    .how-works__title-blur::after {
+        left: 23rem;
+        top: -16rem;
+    }
+
+    .how-works-blur::before {
+        right: 36rem;
+        top: 12rem;
+    }
+
+    .how-works-blur::after {
+        right: 40.8rem;
+        top: 13rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ КАК РАБОТАЕТ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE? 1500*/
