@@ -102,6 +102,9 @@ section {
         font-size: 0.666668vw;
     }
 
+    .wrapper {
+        padding: 0 11.2rem;
+    }
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/

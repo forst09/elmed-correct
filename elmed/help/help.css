@@ -1,8 +1,9 @@
-*НАЧАЛО СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ*/ .help {
+/*НАЧАЛО СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ*/
+.help {
     position: relative;
 }
 
-.hekp::after {
+.help::after {
     content: '';
     position: absolute;
     display: block;
@@ -52,53 +53,91 @@
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ*/
 
 /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 668*/
+@media(min-width:668px) {
+    .icons-cards__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-.icons-cards__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+    .icons-cards__item {
+        max-width: 18rem;
+        width: 100%;
+    }
 
-.icons-cards__item {
-    max-width: 18rem;
-    width: 100%;
-}
+    .icons-cards__icon {
+        width: 9.4rem;
+        height: 9.4rem;
+        margin-bottom: 1.6rem;
+    }
 
-.icons-cards__icon {
-    width: 9.4rem;
-    height: 9.4rem;
-    margin-bottom: 1.6rem;
-}
+    .icons-cards__item+.icons-cards__item {
+        margin: 0;
+    }
 
-.icons-cards__item+.icons-cards__item {
-    margin: 0;
-}
+    .icons-cards__desc {
+        -ms-line-clamp: 3;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
 
-.icons-cards__desc {
-    -ms-line-clamp: 3;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-}
-
-.help::after {
-    width: 12.1rem;
-    height: 12.1rem;
-    filter: blur(100px);
-    left: -6rem;
-    bottom: -10rem;
+    .help::after {
+        width: 12.1rem;
+        height: 12.1rem;
+        filter: blur(100px);
+        left: -6rem;
+        bottom: -10rem;
+    }
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 668*/
 
 /*НАЧАЛО СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 1024*/
-.help::after {
-    bottom: unset;
-    top: -8rem;
-    left: 10rem;
-}
+@media(min-width:1024px) {
+    .help::after {
+        bottom: unset;
+        top: -8rem;
+        left: 10rem;
+    }
 
-.icons-cards__item {
-    max-width: 21.5rem;
+    .icons-cards__item {
+        max-width: 21.5rem;
+    }
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 1024*/
+
+/*НАЧАЛО СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 1500*/
+
+@media(min-width:1500px) {
+    .icons-cards__item {
+        flex-direction: row;
+        max-width: 35.2rem;
+    }
+
+    .icons-cards__icon {
+        margin: 0 2.4rem 0 0;
+        width: 11rem;
+        height: 11rem;
+        flex-shrink: 0;
+    }
+
+    .icons-cards__desc {
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    .help::after {
+        width: 22.6rem;
+        height: 22.6rem;
+        left: 33rem;
+        top: unset;
+        bottom: -17rem;
+    }
+
+    .icons-cards {
+        padding: 0 4.6rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИЙ АППАРАТ ELMEDLIFE СМОЖЕТ ПОМОЧЬ 1500*/
