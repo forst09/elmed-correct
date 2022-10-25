@@ -80,3 +80,34 @@
     }
 
     /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 668*/
+
+    /* НАЧАЛО СТИЛЕЙ БЛОКА ОПИСАНИЯ 1024*/
+    @media(min-width:1024px) {
+        .description__image {
+            width: 40.6rem;
+            height: 33.8rem;
+            margin-right: 0.8rem;
+        }
+
+        .description__text-container {
+            padding: 3.2rem;
+        }
+
+        .description__text {
+            height: 11rem;
+        }
+
+        .description__btn-show {
+            margin-top: 0.8rem;
+        }
+
+        .description__wrapper-blur::after {
+            width: 14.4rem;
+            height: 14.4rem;
+            top: unset;
+            bottom: 1rem;
+            right: 28rem;
+        }
+    }
+
+    /* КОНЕЦ СТИЛЕЙ БЛОКА ОПИСАНИЯ 1024*/
