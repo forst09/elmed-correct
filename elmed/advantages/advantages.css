@@ -1,4 +1,8 @@
   /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
+  body {
+      padding-top: 1000px;
+  }
+
   .advantages__img {
       width: 15.8rem;
       height: 14.9rem;
@@ -54,6 +58,15 @@
       background-color: var(--light-blue);
       top: -8rem;
       right: -2rem;
+  }
+
+  .advantages__text-item {
+      transform: translateX(-50%);
+      transition: transform 1s ease;
+  }
+
+  .advantages__text-item.element-show {
+      transform: translateX(0%);
   }
 
   /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРЕИМУЩЕТСВА */
