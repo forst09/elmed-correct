@@ -359,9 +359,9 @@ a.icon-text:focus-within svg {
         position: absolute;
         left: 4rem;
         top: 50%;
-        /* -webkit-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%); */
+        transform: translateY(-50%);
         /* width: 100%; */
         width: calc(100% - 8rem);
         z-index: 100;
@@ -425,6 +425,11 @@ a.icon-text:focus-within svg {
     .scroll {
         padding: 0 11.2rem;
         overflow: unset;
+    }
+
+    .swiper-buttons {
+        width: calc(100% - 22.4rem);
+        left: 11.2rem;
     }
 }
 

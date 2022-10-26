@@ -49,3 +49,27 @@
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРИЗНАНИЯ И СЕРТИФИКАТЫ 1024*/
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ПРИЗНАНИЯ И СЕРТИФИКАТЫ 1500*/
+@media(min-width:1500px) {
+    .sertificates__scroll {
+        padding: 0 19.2rem;
+    }
+
+    .sertificates__scroll-blur::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        z-index: -1;
+        width: 12.1rem;
+        height: 12.1rem;
+        background-color: var(--light-blue);
+        left: 34rem;
+        top: -3rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ПРИЗНАНИЯ И СЕРТИФИКАТЫ 1500*/
