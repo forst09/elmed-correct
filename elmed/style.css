@@ -330,9 +330,7 @@ a.icon-text:focus-within svg {
     }
 
     .swiper-not-mobile .swiper-wrapper {
-        -webkit-column-gap: unset;
-        -moz-column-gap: unset;
-        column-gap: unset;
+        gap: unset !important;
     }
 
     .swiper-not-mobile .swiper-buttons {
@@ -343,11 +341,71 @@ a.icon-text:focus-within svg {
     }
 
     .swiper-button-disabled {
-        opacity: 0 !important;
+        opacity: 1 !important;
     }
 
     .swiper-hide-buttons:hover .swiper-buttons {
         opacity: 1;
+    }
+
+    .swiper-buttons {
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        position: absolute;
+        left: 4rem;
+        top: 50%;
+        /* -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); */
+        /* width: 100%; */
+        width: calc(100% - 8rem);
+        z-index: 100;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease;
+        -o-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
+    }
+
+    .swiper-button-arrow {
+        position: static;
+        margin: 0;
+        /* background: rgba(255, 255, 255, 0.6); */
+        /* backdrop-filter: blur(23px); */
+        width: 6.4rem;
+        height: 6.4rem;
+        /* background-color: var(--white); */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-button-arrow:hover svg {
+        stroke: var(--blue);
+    }
+
+    .swiper-button-arrow svg {
+        width: 1.2rem;
+        height: 2.5rem;
+        stroke: var(--lighter-blue);
+        transition: stroke 0.3s ease;
+    }
+
+    .swiper-button-arrow.swiper-button-prev {
+        transform: rotate(180deg);
+    }
+
+    .swiper-button-arrow.swiper-button-disabled svg {
+        stroke: var(--lighter-blue);
+    }
+
+    .swiper-button-arrow::after {
+        content: none;
     }
 }
 

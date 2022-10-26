@@ -40,4 +40,8 @@
     <symbol viewBox="0 0 24 24" id="arrow2px">
         <path d="M18 9L12 15L6 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
+    <symbol viewBox="0 0 15 28" id="swiperArrow">
+        <path d="M1.32544 1.9043L13.5742 14.1531L1.32544 26.4019" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </symbol>
 </svg>
