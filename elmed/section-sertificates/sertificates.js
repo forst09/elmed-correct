@@ -4,7 +4,7 @@ $(document).ready(function () {
     // ПОДКЛЮЧЕНИЕ СВАЙПЕРА В СЕКЦИИ НА ЭКРАНАХ >= 1024
     if ($(window).width() >= 1024) {
 
-        //ПОИСК
+        //СЕРТИФИКАТЫ
         const swiperSertificates = new Swiper('.swiper-sertificates', {
             speed: 700,
             slidesPerView: 'auto',
