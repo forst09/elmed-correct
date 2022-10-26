@@ -1,6 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
+    //ЭЛЕМЕНТЫ СПИСКА ВЫЕЗЖАЮТ СЛЕВА НА МОБИЛКЕ
     if ($(window).width() < 668) {
         function onEntry(entry) {
             entry.forEach(change => {
