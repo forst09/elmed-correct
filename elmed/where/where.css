@@ -1,0 +1,40 @@
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? */
+.where__info-links {
+    margin: 1.6rem 0;
+}
+
+.footnote {
+    display: flex;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(23px);
+    border-radius: 1.6rem;
+}
+
+.footnote svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: var(--blue);
+    flex-shrink: 0;
+    margin-right: 0.8rem;
+}
+
+.footnote .text b {
+    color: var(--blue);
+}
+
+.where__map {
+    margin-top: 1.6rem;
+    width: 100%;
+    height: 28.6rem;
+}
+
+.where__info-blur::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    bottom: -7rem;
+    left: 3rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? */
