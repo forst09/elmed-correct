@@ -177,6 +177,20 @@ section+div {
     display: flex;
 }
 
+a.icon-text:hover span,
+a.icon-text:active span,
+a.icon-text:focus span,
+a.icon-text:focus-within span {
+    color: var(--blue-hover);
+}
+
+a.icon-text:hover svg,
+a.icon-text:active svg,
+a.icon-text:focus svg,
+a.icon-text:focus-within svg {
+    stroke: var(--blue-hover);
+}
+
 .icon-text+.icon-text {
     margin-top: 1.2rem;
 }
@@ -188,6 +202,7 @@ section+div {
     margin-right: 0.4rem;
     margin-top: 0.2rem;
     flex-shrink: 0;
+    transition: stroke 0.3s ease;
 }
 
 .icon-text span {
@@ -195,6 +210,7 @@ section+div {
     font-size: 1.4rem;
     line-height: 2rem;
     color: var(--blue);
+    transition: color 0.3s ease;
 }
 
 .map {
