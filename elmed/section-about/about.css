@@ -1,0 +1,174 @@
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ О НАС */
+.about__text {
+    padding: 1.2rem 1.6rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(23px);
+    border-radius: 1.6rem;
+}
+
+.about__video {
+    position: relative;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    max-width: 28.8rem;
+    margin: 1.6rem auto 0;
+}
+
+.about__video-img {
+    width: 28.8rem;
+    height: 13.7rem;
+}
+
+.about__video-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__video-play {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5.4rem;
+    height: 5.4rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(23px);
+}
+
+.about__video-play:hover svg,
+.about__video-play:active svg,
+.about__video-play:focus svg,
+.about__video-play:focus-within svg {
+    fill: var(--blue-hover);
+}
+
+.about__video-play svg {
+    width: 1.7rem;
+    height: 1.9rem;
+    fill: var(--blue);
+    margin-left: 0.5rem;
+    transition: fill 0.3s ease;
+}
+
+.about__wrapper-blur::after {
+    width: 11.2rem;
+    height: 11.2rem;
+    background-color: var(--light-blue);
+    left: -9rem;
+    top: 3rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС */
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ О НАС 668*/
+@media(min-width:668px) {
+    .about__text {
+        padding: 2.4rem;
+    }
+
+    .about__video {
+        max-width: unset;
+    }
+
+    .about__video-img {
+        width: 100%;
+        height: 30.8rem;
+    }
+
+    .about__video-play {
+        width: 10.8rem;
+        height: 10.8rem;
+    }
+
+    .about__video-play svg {
+        width: 3.3rem;
+        height: 3.8rem;
+        margin-left: 0.7rem;
+    }
+
+    .about__wrapper-blur::after {
+        width: 14.6rem;
+        height: 14.6rem;
+        left: -3rem;
+        top: -1rem;
+        filter: blur(100px);
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС 668*/
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ О НАС 1024*/
+@media(min-width:1024px) {
+    .about__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .about__text {
+        max-width: 44.6rem;
+    }
+
+    .about__video {
+        margin: 0;
+        max-width: 48.2rem;
+        width: 100%;
+    }
+
+    .about__video-img {
+        width: 48.2rem;
+        height: 23rem;
+    }
+
+    .about__wrapper-blur::after {
+        content: none;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС 1024*/
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ О НАС 1500*/
+@media(min-width:1500px) {
+    .about__text {
+        max-width: 60.9rem;
+    }
+
+    .about__video {
+        max-width: 64.6rem;
+    }
+
+    .about__video-img {
+        width: 64.6rem;
+        height: 30.8rem;
+    }
+
+    .about__wrapper-blur::after {
+        content: '';
+        left: unset;
+        right: 20rem;
+        top: 8rem;
+    }
+
+    .about__wrapper-blur::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        z-index: -1;
+        width: 11.2rem;
+        height: 11.2rem;
+        background-color: var(--lighter-blue);
+        left: 30rem;
+        top: -14rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ О НАС 1500*/
