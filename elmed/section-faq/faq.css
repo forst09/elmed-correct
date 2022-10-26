@@ -31,6 +31,7 @@
     width: 3.2rem;
     height: 3.2rem;
     margin-bottom: 0.8rem;
+    flex-shrink: 0;
 }
 
 .dropdown__link span {
@@ -41,3 +42,53 @@
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ */
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 668*/
+@media(min-width:668px) {
+    .faq {
+        padding: 4.8rem 0;
+    }
+
+    .dropdown__wrapper {
+        padding: 2.4rem 3.2rem;
+    }
+
+    .dropdown__link {
+        flex-direction: row;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .dropdown__link::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url('../image/arrow-down-2px.svg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown__link.active::after {
+        transform: rotate(180deg);
+    }
+
+    .dropdown__link svg {
+        margin: 0 1.2rem 0 0;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .dropdown__link span {
+        text-align: left;
+        max-width: 46.8rem;
+        width: 100%;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 668*/
