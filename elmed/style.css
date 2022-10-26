@@ -19,6 +19,7 @@ body {
     position: relative;
     font-style: normal;
     background-color: var(--white);
+    color: var(--black);
 }
 
 svg {
@@ -47,7 +48,6 @@ section+div {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.6rem;
-    color: var(--black);
     text-align: center;
 }
 
@@ -223,6 +223,32 @@ a.icon-text:focus-within svg {
     height: 100%;
 }
 
+.scroll {
+    padding: 0 1.6rem;
+    overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.swiper-not-mobile {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.swiper-not-mobile .swiper-slide {
+    width: auto;
+}
+
+.swiper-not-mobile .swiper-buttons {
+    display: none;
+    pointer-events: none;
+}
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -246,12 +272,17 @@ a.icon-text:focus-within svg {
         margin-top: 9.6rem;
     }
 
-    section+section.background {
+    section+section.background,
+    section.background+section {
         margin-top: 4.8rem;
     }
 
     section+div {
         margin-top: 4.8rem;
+    }
+
+    .scroll {
+        padding: 0 3.2rem;
     }
 }
 
@@ -268,7 +299,8 @@ a.icon-text:focus-within svg {
         margin-top: 10.4rem;
     }
 
-    section+section.background {
+    section+section.background,
+    section.background+section {
         margin-top: 5.2rem;
     }
 
@@ -287,6 +319,36 @@ a.icon-text:focus-within svg {
     .icon-text svg {
         margin-right: 0.8rem;
     }
+
+    .scroll {
+        padding: 0 4rem;
+        overflow: unset;
+    }
+
+    .swiper-not-mobile {
+        display: block;
+    }
+
+    .swiper-not-mobile .swiper-wrapper {
+        -webkit-column-gap: unset;
+        -moz-column-gap: unset;
+        column-gap: unset;
+    }
+
+    .swiper-not-mobile .swiper-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        pointer-events: all;
+    }
+
+    .swiper-button-disabled {
+        opacity: 0 !important;
+    }
+
+    .swiper-hide-buttons:hover .swiper-buttons {
+        opacity: 1;
+    }
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -300,6 +362,11 @@ a.icon-text:focus-within svg {
 
     .wrapper {
         padding: 0 11.2rem;
+    }
+
+    .scroll {
+        padding: 0 11.2rem;
+        overflow: unset;
     }
 }
 
