@@ -30,7 +30,7 @@ $(document).ready(function () {
                             iconImageSize: [71, 47],
                             // Смещение левого верхнего угла иконки относительно
                             // её "ножки" (точки привязки).
-                            iconImageOffset: [-10, -60],
+                            iconImageOffset: [-10, -80],
 
                             // Макет содержимого.
                             iconContentLayout: MyIconContentLayout,
