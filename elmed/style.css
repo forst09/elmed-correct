@@ -267,6 +267,10 @@ a.icon-text:focus-within svg {
         margin-top: 10.4rem;
     }
 
+    section+section.background {
+        margin-top: 5.2rem;
+    }
+
     section+div {
         margin-top: 5.2rem;
     }

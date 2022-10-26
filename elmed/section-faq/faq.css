@@ -92,3 +92,21 @@
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 668*/
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 1024*/
+@media(min-width:1024px) {
+    .faq {
+        padding: 5.2rem 0;
+    }
+
+    .faq__dropdowns {
+        max-width: 70.4rem;
+        margin: 0 auto;
+    }
+
+    .dropdown__wrapper {
+        padding: 2.4rem 4rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ 1024*/
