@@ -254,6 +254,10 @@ section+div {
     .wrapper {
         padding: 0 4rem;
     }
+
+    .icon-text svg {
+        margin-right: 0.8rem;
+    }
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
