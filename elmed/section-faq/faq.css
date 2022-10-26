@@ -1,0 +1,43 @@
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ */
+
+.faq {
+    padding: 2.4rem 0;
+    background: rgba(166, 209, 238, 0.2);
+}
+
+.dropdown__content {
+    display: none;
+    margin-top: 1.2rem;
+}
+
+.dropdown__wrapper {
+    background-color: var(--white);
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+}
+
+.dropdown__wrapper+.dropdown__wrapper {
+    margin-top: 2.4rem;
+}
+
+.dropdown__link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown__link svg {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.dropdown__link span {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ ВОПРОС-ОТВЕТ */
