@@ -180,6 +180,8 @@ section+div {
 }
 
 .icon-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -207,7 +209,10 @@ a.icon-text:focus-within svg {
     stroke: var(--blue);
     margin-right: 0.8rem;
     margin-top: 0.2rem;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
+    -webkit-transition: stroke 0.3s ease;
+    -o-transition: stroke 0.3s ease;
     transition: stroke 0.3s ease;
 }
 
@@ -216,6 +221,8 @@ a.icon-text:focus-within svg {
     font-size: 1.4rem;
     line-height: 2rem;
     color: var(--blue);
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
@@ -260,8 +267,14 @@ a.icon-text:focus-within svg {
     height: 1.6rem;
     background: var(--white);
     opacity: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
 }
@@ -272,6 +285,8 @@ a.icon-text:focus-within svg {
     height: 0.53rem;
     background-color: var(--lighter-blue);
     border-radius: 50%;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 
@@ -286,6 +301,8 @@ a.icon-text:focus-within svg {
     bottom: 1rem;
     width: auto;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -299,17 +316,23 @@ a.icon-text:focus-within svg {
     padding: 1rem 3.6rem;
     border: 0.1rem solid var(--blue);
     border-radius: 7.4rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#006DB8), to(#0097FF));
+    background: -o-linear-gradient(left, #006DB8 0%, #0097FF 100%);
     background: linear-gradient(90deg, #006DB8 0%, #0097FF 100%);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 109, 184, 0.25);
     box-shadow: 0px 0px 10px rgba(0, 109, 184, 0.25);
 }
 
 .btn:focus-within,
 .btn:active,
 .btn:focus {
+    background: -o-linear-gradient(354.62deg, #006DB8 3.02%, #0097FF 131.51%);
     background: linear-gradient(95.38deg, #006DB8 3.02%, #0097FF 131.51%);
 }
 
@@ -325,6 +348,8 @@ a.icon-text:focus-within svg {
     line-height: 2.2rem;
     font-weight: 700;
     color: var(--blue);
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
@@ -338,12 +363,17 @@ a.icon-text:focus-within svg {
 .footer__logo img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
 .footer__socials-items {
     margin-top: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -367,6 +397,8 @@ a.icon-text:focus-within svg {
     width: 2.4rem;
     height: 2.4rem;
     fill: var(--blue);
+    -webkit-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
     transition: fill 0.3s ease;
 }
 
@@ -379,7 +411,11 @@ a.icon-text:focus-within svg {
 }
 
 .footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -420,8 +456,12 @@ a.icon-text:focus-within svg {
     bottom: 0;
     width: 100%;
     height: 0.2rem;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
     transform: scaleY(0.5);
     background-color: var(--black);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -486,6 +526,7 @@ a.icon-text:focus-within svg {
     .footer__container {
         border-radius: 1.6rem 1.6rem 0 0;
         background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(23px);
         backdrop-filter: blur(23px);
     }
 
@@ -569,6 +610,8 @@ a.icon-text:focus-within svg {
     }
 
     .swiper-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -600,8 +643,14 @@ a.icon-text:focus-within svg {
         height: 6.4rem;
         /* background-color: var(--white); */
         border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -613,10 +662,14 @@ a.icon-text:focus-within svg {
         width: 1.2rem;
         height: 2.5rem;
         stroke: var(--lighter-blue);
+        -webkit-transition: stroke 0.3s ease;
+        -o-transition: stroke 0.3s ease;
         transition: stroke 0.3s ease;
     }
 
     .swiper-button-arrow.swiper-button-prev {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
     }
 
@@ -697,6 +750,7 @@ a.icon-text:focus-within svg {
         width: 13.3rem;
         height: 13.3rem;
         background-color: var(--light-blue);
+        -webkit-filter: blur(100px);
         filter: blur(100px);
         bottom: 0;
         right: 40rem;
@@ -711,6 +765,7 @@ a.icon-text:focus-within svg {
         width: 11.2rem;
         height: 11.2rem;
         background-color: var(--light-blue);
+        -webkit-filter: blur(100px);
         filter: blur(100px);
         top: -2rem;
         left: 52rem;

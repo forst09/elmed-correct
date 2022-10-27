@@ -4,8 +4,15 @@
 }
 
 .main__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -22,12 +29,14 @@
 .main__item-img img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
 .main__blur::after {
     width: 11.2rem;
     height: 11.2rem;
+    -webkit-filter: blur(85px);
     filter: blur(85px);
     background-color: var(--light-blue);
     right: -7rem;
@@ -54,7 +63,12 @@
 /* НАЧАЛО СТИЛЕЙ ГЛАВНОГО ЭКРАНА 668*/
 @media(min-width:668px) {
     .main__item {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -77,6 +91,8 @@
 
     .main__item-img {
         margin: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         width: auto;
         height: 28.4rem;
@@ -84,6 +100,7 @@
 
     .main__blur::before {
         background-color: var(--lighter-blue);
+        -webkit-filter: blur(100px);
         filter: blur(100px);
         left: 2rem;
         top: 10rem;
@@ -92,6 +109,7 @@
     .main__blur::after {
         width: 14.4rem;
         height: 14.4rem;
+        -webkit-filter: blur(100px);
         filter: blur(100px);
         right: 9rem;
         top: -9rem;
@@ -107,7 +125,11 @@
     }
 
     .main__item {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -120,6 +142,8 @@
     }
 
     .main__item-img {
+        -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
         flex-grow: unset;
         width: 35.8rem;
         height: 34.1rem;
