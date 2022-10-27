@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>free session</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="air-datepicker.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="free-session.css">
+</head>
+
+<body>
+    <section class="free-session">
+        <div class="wrapper">
+            <div class="free-session__wrapper">
+                <div class="free-session__container">
+                    <h3 class="title title--white">Первый сеанс — бесплатно!</h3>
+                    <div class="text text--white">
+                        <p>Воспользуйтесь бесплатным сеансом и ощутите результаты на себе!</p>
+                    </div>
+                    <form action="" class="free-session__form">
+                        <div class="free-session__form-container">
+                            <div class="free-session__form-inputs">
+                                <div class="input__wrapper input__wrapper--white">
+                                    <label for="firstSessionName" class="input__label">Имя *</label>
+                                    <input type="text" required id="firstSessionName" class="input"
+                                        placeholder="Ваше имя">
+                                </div>
+                                <div class="input__wrapper input__wrapper--white">
+                                    <label for="firstSessionPhone" class="input__label input-phone">Телефон *</label>
+                                    <input type="tel" required id="firstSessionPhone" class="input"
+                                        placeholder="Ваш телефон">
+                                </div>
+                            </div>
+                            <div class="free-session__form-choice">
+                                <div class="input-choice__wrapper">
+                                    <input type="text" class="input-choice" id="firstSessionDate" placeholder="Дата"
+                                        readonly>
+                                    <label for="firstSessionDate" class="input-choice__icon">
+                                        <svg>
+                                            <use xlink:href="../sprite.svg#calendar"></use>
+                                        </svg>
+                                    </label>
+                                    <label for="firstSessionDate" class="input-choice__arrow">
+                                        <svg>
+                                            <use xlink:href="../sprite.svg#arrowDown"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="input-choice__wrapper">
+                                    <input type="text" class="input-choice" id="firstSessionTime" placeholder="Время"
+                                        readonly>
+                                    <label for="firstSessionTime" class="input-choice__icon">
+                                        <svg>
+                                            <use xlink:href="../sprite.svg#clock"></use>
+                                        </svg>
+                                    </label>
+                                    <label for="firstSessionTime" class="input-choice__arrow">
+                                        <svg>
+                                            <use xlink:href="../sprite.svg#arrowDown"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="free-session__form-submit">
+                                <input type="submit" id="firstSessionSubmit" class="display-none">
+                                <label for="firstSessionSubmit" class="btn">
+                                    <span>Записаться</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="air-datepicker.js"></script>
+    <script src="free-session.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

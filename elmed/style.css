@@ -353,6 +353,64 @@ a.icon-text:focus-within svg {
     transition: color 0.3s ease;
 }
 
+.title--white,
+.text--white {
+    color: var(--white) !important;
+}
+
+.input__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+.input__label {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: var(--blue);
+    margin-bottom: 0.8rem;
+}
+
+.input,
+.input-choice {
+    border: unset;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    background: transparent;
+    font-weight: 300;
+    font-family: 'UniNeue';
+}
+
+.input {
+    color: var(--gray);
+}
+
+.input::placeholder {
+    color: var(--gray);
+    font-weight: 300;
+    font-family: 'UniNeue';
+}
+
+.input__wrapper+.input__wrapper {
+    margin-top: 2.4rem;
+}
+
+.input__wrapper--white .input::placeholder,
+.input__wrapper--white .input,
+.input__wrapper--white .input__label {
+    color: var(--white);
+}
+
+.input__wrapper--white {
+    border-bottom: 1px solid var(--white);
+}
+
+.display-none {
+    display: none;
+}
+
 /* ФУТЕР */
 .footer__logo {
     display: inline-block;
