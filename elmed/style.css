@@ -337,8 +337,13 @@ a.icon-text:focus-within svg {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+
+    .swiper-delete-buttons .swiper-button-prev,
+    .swiper-delete-buttons .swiper-button-next {
         pointer-events: all;
     }
+
 
     .swiper-button-disabled {
         opacity: 1 !important;
