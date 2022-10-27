@@ -299,6 +299,25 @@ a.icon-text:focus-within svg {
     padding: 1rem 3.6rem;
     border: 0.1rem solid var(--blue);
     border-radius: 7.4rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #006DB8 0%, #0097FF 100%);
+    box-shadow: 0px 0px 10px rgba(0, 109, 184, 0.25);
+}
+
+.btn:focus-within,
+.btn:active,
+.btn:focus {
+    background: linear-gradient(95.38deg, #006DB8 3.02%, #0097FF 131.51%);
+}
+
+.btn:hover span,
+.btn:focus-within span,
+.btn:active span,
+.btn:focus span {
+    color: var(--white);
 }
 
 .btn span {
@@ -306,6 +325,7 @@ a.icon-text:focus-within svg {
     line-height: 2.2rem;
     font-weight: 700;
     color: var(--blue);
+    transition: color 0.3s ease;
 }
 
 /* ФУТЕР */
@@ -606,6 +626,23 @@ a.icon-text:focus-within svg {
 
     .swiper-button-arrow::after {
         content: none;
+    }
+
+    .swiper-pagination-bullet {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .swiper-pagination-bullet::after {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 0.3rem;
     }
 
     /* ФУТЕР 1024*/
