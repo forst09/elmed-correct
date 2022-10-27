@@ -146,3 +146,71 @@
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 668*/
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1024*/
+@media(min-width:1024px) {
+    .free-session__form {
+        margin-top: 4.8rem
+    }
+
+    .free-session__wrapper {
+        padding: 3.2rem;
+    }
+
+    .free-session__form-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .free-session__form-inputs .input__wrapper {
+        width: 21.1rem;
+    }
+
+    .free-session__form-inputs .input__wrapper+.input__wrapper {
+        margin-left: 2.4rem;
+    }
+
+    .free-session__form-choice,
+    .input-choice__wrapper+.input-choice__wrapper {
+        margin: 0 0 0 2.4rem;
+    }
+
+    .input-choice__wrapper {
+        width: 19.5rem;
+    }
+
+    .free-session__form-submit {
+        grid-column: 1/-1;
+        margin-top: 4rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1024*/
+
+/* НАЧАЛО СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1500*/
+@media(min-width:1500px) {
+    .free-session__wrapper {
+        padding: 4rem;
+    }
+
+    .free-session__form-container {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .free-session__form-inputs .input__wrapper {
+        width: 23.2rem;
+    }
+
+    .input-choice__wrapper {
+        width: 20rem;
+    }
+
+    .free-session__form-submit {
+        grid-column: unset;
+        margin: 0;
+        margin-left: auto;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 1500*/
