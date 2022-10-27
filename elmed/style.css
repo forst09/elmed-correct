@@ -6,6 +6,7 @@
     --lighter-blue: #A6CDFF;
     --blue: #006DB8;
     --blue-hover: #0096FD;
+    --gray: #B7C5CD;
 }
 
 html {
@@ -204,7 +205,7 @@ a.icon-text:focus-within svg {
     width: 1.5rem;
     height: 1.5rem;
     stroke: var(--blue);
-    margin-right: 0.4rem;
+    margin-right: 0.8rem;
     margin-top: 0.2rem;
     flex-shrink: 0;
     transition: stroke 0.3s ease;
@@ -249,6 +250,104 @@ a.icon-text:focus-within svg {
     pointer-events: none;
 }
 
+/* ФУТЕР */
+.footer__logo {
+    display: inline-block;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.footer__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer__socials-items {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__socials-link {
+    display: inline-block;
+    max-height: 2.4rem;
+}
+
+.footer__socials-link+.footer__socials-link {
+    margin-left: 1.6rem;
+}
+
+.footer__socials-link svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--blue);
+}
+
+.footer {
+    margin-top: 4.8rem;
+}
+
+.footer__container {
+    padding-bottom: 3.2rem;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__socials {
+    margin-left: 2rem;
+}
+
+.footer__phone-desc {
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--gray);
+}
+
+.footer__address {
+    text-align: center;
+    max-width: 74vw;
+    margin: 4.8rem auto 4rem;
+}
+
+.footer__address-address {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.footer__address-privacy {
+    display: inline-block;
+    margin-top: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    position: relative;
+}
+
+.footer__address-privacy::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.2rem;
+    transform: scaleY(0.5);
+    background-color: var(--black);
+}
+
+.footer__copy {
+    text-align: center;
+    color: var(--blue);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+/* КОНЕЦ ФУТЕР */
+
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ */
 
 /*НАЧАЛО ОБЩИХ СТИЛЕЙ 668*/
@@ -284,6 +383,28 @@ a.icon-text:focus-within svg {
     .scroll {
         padding: 0 3.2rem;
     }
+
+    /* ФУТЕР 668*/
+    .footer {
+        margin-top: 9.6rem;
+    }
+
+    .footer__container {
+        border-radius: 1.6rem 1.6rem 0 0;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(23px);
+    }
+
+    .footer__wrapper {
+        padding: 4.8rem 1.6rem;
+    }
+
+    .footer__address {
+        margin: 1rem 0 4rem;
+        text-align: left;
+    }
+
+    /* КОНЕЦ ФУТЕР 668*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 668*/
@@ -314,10 +435,6 @@ a.icon-text:focus-within svg {
 
     .wrapper {
         padding: 0 4rem;
-    }
-
-    .icon-text svg {
-        margin-right: 0.8rem;
     }
 
     .scroll {
@@ -412,6 +529,25 @@ a.icon-text:focus-within svg {
     .swiper-button-arrow::after {
         content: none;
     }
+
+    /* ФУТЕР 1024*/
+    .footer {
+        margin-top: 10.4rem;
+    }
+
+    .footer__wrapper {
+        padding: 5.2rem 2.4rem;
+    }
+
+    .footer__socials-items {
+        margin-top: 1.2rem;
+    }
+
+    .footer__address {
+        margin: 1.4rem 0 3.2rem;
+    }
+
+    /* КОНЕЦ ФУТЕР 1024*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1024*/
@@ -436,6 +572,36 @@ a.icon-text:focus-within svg {
         width: calc(100% - 22.4rem);
         left: 11.2rem;
     }
+
+    /* ФУТЕР 1500*/
+    .footer {
+        margin-top: 5.2rem;
+    }
+
+    .footer__blur::after {
+        width: 13.3rem;
+        height: 13.3rem;
+        background-color: var(--light-blue);
+        filter: blur(100px);
+        bottom: 0;
+        right: 40rem;
+    }
+
+    .footer__blur::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        z-index: -1;
+        width: 11.2rem;
+        height: 11.2rem;
+        background-color: var(--light-blue);
+        filter: blur(100px);
+        top: -2rem;
+        left: 10rem;
+    }
+
+    /* КОНЕЦ ФУТЕР 1500*/
 }
 
 /*КОНЕЦ ОБЩИХ СТИЛЕЙ 1500*/
