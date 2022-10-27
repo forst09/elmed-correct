@@ -50,3 +50,52 @@
 }
 
 /* КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА */
+
+/* НАЧАЛО СТИЛЕЙ ГЛАВНОГО ЭКРАНА 668*/
+@media(min-width:668px) {
+    .main__item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .main__item-info {
+        max-width: 31.3rem;
+    }
+
+    .main__item-info .title {
+        text-align: left;
+        margin-bottom: 1.6rem;
+    }
+
+    .main__item-text {
+        text-align: left;
+    }
+
+    .main__item-info .btn__wrapper {
+        text-align: left;
+    }
+
+    .main__item-img {
+        margin: 0;
+        flex-grow: 1;
+        width: auto;
+        height: 28.4rem;
+    }
+
+    .main__blur::before {
+        background-color: var(--lighter-blue);
+        filter: blur(100px);
+        left: 2rem;
+        top: 10rem;
+    }
+
+    .main__blur::after {
+        width: 14.4rem;
+        height: 14.4rem;
+        filter: blur(100px);
+        right: 9rem;
+        top: -9rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ ГЛАВНОГО ЭКРАНА 668*/

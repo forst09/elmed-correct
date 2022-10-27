@@ -268,8 +268,8 @@ a.icon-text:focus-within svg {
 
 .swiper-pagination-bullet::after {
     content: '';
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.53rem;
+    height: 0.53rem;
     background-color: var(--lighter-blue);
     border-radius: 50%;
     transition: background-color 0.3s ease;
