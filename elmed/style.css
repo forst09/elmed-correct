@@ -420,6 +420,10 @@ a.icon-text:focus-within svg {
         text-align: left;
     }
 
+    .footer__container {
+        padding: 0;
+    }
+
     /* КОНЕЦ ФУТЕР 668*/
 }
 
