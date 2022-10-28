@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="consultation.css">
+</head>
+
+<body>
+    <a href="#modalConsultation" class="call-modal" data-fancybox>modal</a>
+
+    <div class="consultation" id="modalConsultation">
+        <div class="consultation__wrapper blur consultation__wrapper-blur">
+            <h4 class="title modal-title">Бесплатная консультация</h4>
+            <div class="text">
+                <p>Оставьте свои данные и в ближайшее время наш специалист свяжется с Вами</p>
+            </div>
+            <form action="" class="modal-form">
+                <div class="modal-form__container">
+                    <div class="input__wrapper">
+                        <label for="consultationName" class="input__label">Имя *</label>
+                        <input type="text" required id="consultationName" class="input" placeholder="Ваше имя">
+                    </div>
+                    <div class="input__wrapper">
+                        <label for="consultationPhone" class="input__label">Телефон *</label>
+                        <input type="tel" required id="consultationPhone" class="input input-phone"
+                            placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal-form__submit">
+                        <input type="submit" id="consultationSubmit" class="display-none">
+                        <label for="consultationSubmit" class="btn">
+                            <span>Отправить</span>
+                        </label>
+                    </div>
+                    <div class="form-note">
+                        Нажимая кнопку “Отправить” вы даете согласие на <a
+                            href="privacy.html">обработку&nbsp;персональных&nbsp;данных</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- ЗАЯВКА ОТПРАВЛЕНА -->
+        <div class="modal-complete blur modal-complete-blur" style="display: none;">
+            <div class="modal-complete__icon">
+                <svg>
+                    <use xlink:href="../sprite.svg#complete"></use>
+                </svg>
+            </div>
+            <h3 class="title modal-title">Ваша заявка успешно отправлена</h3>
+        </div>
+        <a href="" class="modal-close" data-fancybox-close>
+            <svg>
+                <use xlink:href="../sprite.svg#close"></use>
+            </svg>
+        </a>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="consultation.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

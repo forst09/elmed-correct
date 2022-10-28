@@ -11,6 +11,7 @@
     --black-light: #0F2552;
     --gray-blue: #ECF5FC;
     --sky-blue: #A6D1EE;
+    --bg-black: #393939;
 }
 
 html {
@@ -497,7 +498,7 @@ a.icon-text:focus-within svg {
 }
 
 .input {
-    color: var(--gray);
+    color: var(--blue);
 }
 
 .input::placeholder {

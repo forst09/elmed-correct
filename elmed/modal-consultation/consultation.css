@@ -1,0 +1,244 @@
+/* НАЧАЛО СТИЛЕЙ МОДАЛКИ */
+
+.consultation {
+    display: none;
+    transform: translateY(100%);
+    transition: transform 0.6s ease;
+    box-shadow: 0px 8.26788px 33.0715px rgb(0 0 0 / 5%);
+    border-radius: 1.6rem;
+    overflow: hidden;
+    width: 90vw;
+    max-width: 46.4rem;
+    position: relative;
+    padding: 5.6rem 1.6rem 3.2rem;
+    cursor: default !important;
+}
+
+.consultation .text {
+    text-align: center;
+}
+
+.consultation.fancybox__content {
+    transform: translateY(0);
+}
+
+.fancybox__backdrop {
+    background: var(--bg-black) !important;
+    opacity: 0.2 !important;
+}
+
+.fancybox__content :focus:not(.carousel__button.is-close) {
+    outline: unset;
+}
+
+.modal-title {
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.modal-form {
+    margin-top: 2.2rem;
+}
+
+.modal-form__submit {
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+.modal-form__submit .btn {
+    min-width: 22.7rem;
+}
+
+.form-note {
+    margin-top: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--gray);
+}
+
+.form-note a {
+    position: relative;
+}
+
+.form-note a:hover::after {
+    width: 0;
+}
+
+.form-note a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray);
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.modal-close:hover svg {
+    stroke: var(--blue);
+}
+
+.modal-close svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    stroke: var(--gray);
+    transition: stroke 0.3s ease;
+}
+
+.modal-form__container {
+    max-width: 25.6rem;
+    margin: 0 auto;
+}
+
+/* ЗАЯВКА ОТПРАВЛЕНА */
+.modal-complete {
+    max-width: 21.3rem;
+    margin: 2.4rem auto 4.8rem;
+}
+
+.modal-complete .modal-title {
+    margin: 0;
+}
+
+.modal-complete__icon {
+    width: 8.8rem;
+    height: 8.8rem;
+    margin: 0 auto 2.4rem;
+}
+
+.modal-complete__icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    stroke: var(--blue);
+}
+
+/* КОНЕЦ СТИЛЕЙ МОДАЛКИ */
+
+/* НАЧАЛО СТИЛЕЙ МОДАЛКИ 668*/
+@media(min-width:668px) {
+    .modal-form {
+        margin-top: 4.8rem;
+    }
+
+    .modal-form__container {
+        max-width: 39.3rem;
+    }
+
+    .modal-close {
+        right: 2.4rem;
+        top: 2.4rem;
+    }
+
+    .consultation {
+        width: 100%;
+        max-width: 60.4rem;
+        padding: 4.8rem 5.6rem;
+    }
+
+    .consultation__wrapper-blur::after {
+        filter: blur(150px);
+        width: 18.9rem;
+        height: 18.9rem;
+        background-color: var(--light-blue);
+        left: -14rem;
+        top: 9rem;
+    }
+
+    .consultation__wrapper-blur::before {
+        content: '';
+        position: absolute;
+        width: 29rem;
+        height: 29rem;
+        z-index: -1;
+        background-image: url('../section-how-works/img/circle.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: -24rem;
+        bottom: -8rem;
+        transform: rotate(60deg);
+    }
+
+    .form-note {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    /* ЗАЯВКА ОТПРАВЛЕНА 668*/
+    .modal-complete {
+        max-width: unset;
+        margin: 3.2rem auto;
+    }
+
+    .modal-complete__icon {
+        margin-bottom: 4rem;
+    }
+
+    .modal-complete-blur::after {
+        filter: blur(150px);
+        width: 18.9rem;
+        height: 18.9rem;
+        background-color: var(--light-blue);
+        left: -21rem;
+        top: 6rem;
+    }
+
+    .modal-complete-blur::before {
+        content: '';
+        position: absolute;
+        width: 29rem;
+        height: 29rem;
+        z-index: -1;
+        background-image: url('../section-how-works/img/circle.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: -30rem;
+        bottom: -26rem;
+        transform: rotate(60deg);
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ МОДАЛКИ 668*/
+
+/* НАЧАЛО СТИЛЕЙ МОДАЛКИ 1024*/
+@media(min-width:1024px) {
+    .consultation__wrapper-blur::after {
+        left: -23rem;
+    }
+
+    .consultation__wrapper-blur::before {
+        width: 31.5rem;
+        height: 31.5rem;
+        right: -30rem;
+    }
+
+    .consultation {
+        padding: 4.8rem 10.6rem;
+        max-width: 70.4rem;
+    }
+
+    /* ЗАЯВКА ОТПРАВЛЕНА 1024*/
+    .modal-complete-blur::after {
+        left: -29rem;
+    }
+
+    .modal-complete-blur::before {
+        right: -35rem;
+        bottom: -23rem;
+    }
+}
+
+/* КОНЕЦ СТИЛЕЙ МОДАЛКИ 1024*/
