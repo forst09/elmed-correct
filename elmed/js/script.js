@@ -24,4 +24,10 @@ $(document).ready(function () {
             $(this).parents('.js-hide__parent').find(".js-hide").css('height', h);
         }
     });
+
+    //МАСКА НА ИНПУТЫ С ТЕЛЕФОНОМ
+    jQuery('.input-phone').inputmask({
+        mask: '+7 (999) 999-99-99',
+        showMaskOnHover: false
+    });
 });
