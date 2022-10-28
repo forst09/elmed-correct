@@ -774,6 +774,8 @@ a.icon-text:focus-within svg {
 
     .header__consultation .icon-text svg {
         margin-right: 0.8rem;
+        width: 2.3rem;
+        height: 2.3rem;
     }
 
     .header__consultation .icon-text span {
@@ -964,6 +966,54 @@ a.icon-text:focus-within svg {
         bottom: 0.3rem;
     }
 
+    /* ШАПКА 1024*/
+    .header {
+        padding-top: 2.4rem;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__logo {
+        margin: 0;
+        width: 5.8rem;
+        height: 6rem;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .header__menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__menu-link {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: var(--blue);
+        transition: color 0.3s ease;
+    }
+
+    .header__menu-link:hover {
+        color: var(--blue-hover);
+    }
+
+    .header__menu-item+.header__menu-item {
+        margin-left: 2.4rem;
+    }
+
+    .header__consultation .icon-text svg {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    /* КОНЕЦ ШАПКА 1024*/
+
     /* ФУТЕР 1024*/
     .footer {
         margin-top: 10.4rem;
@@ -1010,6 +1060,26 @@ a.icon-text:focus-within svg {
         width: calc(100% - 22.4rem);
         left: 11.2rem;
     }
+
+    /* ШАПКА 1500*/
+    .header {
+        padding-top: 4rem;
+    }
+
+    .header__logo {
+        width: 8rem;
+        height: 8.4rem;
+    }
+
+    .header__container {
+        padding: 0 8.1rem;
+    }
+
+    .header__menu-item+.header__menu-item {
+        margin-left: 5.6rem;
+    }
+
+    /* КОНЕЦ ШАПКА 1500*/
 
     /* ФУТЕР 1500*/
     .footer {
