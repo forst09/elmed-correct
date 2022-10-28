@@ -525,6 +525,50 @@ a.icon-text:focus-within svg {
     display: none;
 }
 
+/* ШАПКА */
+.header {
+    padding-top: 1.6rem;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__burger {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.header__burger svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    stroke: var(--blue);
+}
+
+.header__logo {
+    display: inline-block;
+    width: 4rem;
+    height: 4.2rem;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__consultation .icon-text svg {
+    margin: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* КОНЕЦ ШАПКА */
+
 /* ФУТЕР */
 .footer__logo {
     display: inline-block;
@@ -703,6 +747,42 @@ a.icon-text:focus-within svg {
     .scroll {
         padding: 0 3.2rem;
     }
+
+    /* ШАПКА 668*/
+    .header__burger {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .header__logo {
+        width: 8rem;
+        height: 8.4rem;
+        margin-left: 13.3rem;
+    }
+
+    .header__consultation .footer__phone-desc {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-weight: 400;
+        margin: 0 0 0.4rem 0;
+    }
+
+    .header__consultation .icon-text {
+        align-items: center;
+    }
+
+    .header__consultation .icon-text svg {
+        margin-right: 0.8rem;
+    }
+
+    .header__consultation .icon-text span {
+        display: inline;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    /* КОНЕЦ ШАПКА 668*/
 
     /* ФУТЕР 668*/
     .footer {
