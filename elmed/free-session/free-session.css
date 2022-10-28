@@ -261,6 +261,12 @@
     .input-choice__wrapper+.input-choice__wrapper {
         margin: 0 0 0 4.8rem;
     }
+
+    .air-datepicker,
+    .time-choice__wrapper {
+        width: 26.1rem;
+        max-width: unset;
+    }
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ 668*/
