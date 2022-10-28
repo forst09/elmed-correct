@@ -53,7 +53,7 @@ $(document).ready(function () {
     //ЗАКРЫТЬ КАЛЕНДАРЬ ПО КЛИКУ НА ЯЧЕЙКУ
     $(document).on('click', '.air-datepicker-cell', function (e) {
         e.stopPropagation();
-        if (!($(this).hasClass('-disabled-'))) {
+        if (!($(this).hasClass('-disabled-') || $(this).hasClass('-month-'))) {
             $(this).parents('.air-datepicker').removeClass('active');
             $(this).parents('.input-choice__wrapper').removeClass('active');
         }
