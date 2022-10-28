@@ -74,4 +74,7 @@
             stroke-linecap="round" stroke-linejoin="round" />
         <path d="M12.2959 6V12H16.7959" stroke-linecap="round" stroke-linejoin="round" />
     </symbol>
+    <symbol viewBox="0 0 16 16" id="arrowLeft">
+        <path d="M10 12.1973L6 8.19727L10 4.19727" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
 </svg>

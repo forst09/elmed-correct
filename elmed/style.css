@@ -44,6 +44,100 @@ section+div {
     margin-top: 2.4rem;
 }
 
+.btn-arrow__wrapper {
+    margin-bottom: 1.6rem;
+}
+
+.btn-arrow {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-arrow:hover svg,
+.btn-arrow:active svg,
+.btn-arrow:focus svg,
+.btn-arrow:focus-within svg {
+    stroke: var(--blue-hover);
+}
+
+.btn-arrow:hover span,
+.btn-arrow:active span,
+.btn-arrow:focus span,
+.btn-arrow:focus-within span {
+    color: var(--blue-hover);
+}
+
+.btn-arrow svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    stroke: var(--blue);
+    transition: stroke 0.3s ease;
+    margin-right: 0.8rem;
+}
+
+.btn-arrow span {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: var(--blue);
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+.content-style {
+    counter-reset: title;
+}
+
+.content-style * {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.content-style h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 2.4rem;
+    font-weight: 700;
+}
+
+.content-style h2 {
+    font-weight: 700;
+    counter-increment: title;
+    counter-reset: item;
+    text-transform: uppercase;
+    margin: 2.4rem 0 1.2rem;
+}
+
+.content-style li+li,
+.content-style p+p {
+    margin-top: 2rem;
+}
+
+.content-style li ol li {
+    margin-top: 2rem;
+}
+
+.content-style li::before {
+    counter-increment: item;
+    content: counter(title) '.' counter(item) ' ';
+}
+
+.content-style li ol {
+    counter-reset: subitem;
+}
+
+.content-style li li::before {
+    counter-increment: subitem;
+    content: counter(title) '.' counter(item) '.' counter(subitem) ' ';
+}
+
+.content-style .content-style li h2,
+.content-style li h3,
+.content-style li h4,
+.content-style li h5,
+.content-style li h6 {
+    display: inline-block;
+}
+
 .wrapper {
     padding: 0 1.6rem;
 }
@@ -566,6 +660,20 @@ a.icon-text:focus-within svg {
 
     html {
         font-size: 1.497005988023952vw;
+    }
+
+    .btn-arrow__wrapper {
+        margin-bottom: 2.4rem;
+    }
+
+    .content-style h1 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        margin-bottom: 5.2rem;
+    }
+
+    .content-style h2 {
+        margin: 4rem 0 2.4rem;
     }
 
     .wrapper {
