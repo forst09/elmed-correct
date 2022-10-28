@@ -24,6 +24,24 @@
     position: relative;
 }
 
+.input-choice__wrapper.active .input-choice {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice::placeholder {
+    color: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice__icon svg {
+    stroke: var(--blue);
+}
+
+.input-choice__wrapper.active .input-choice__arrow svg {
+    transform: rotate(180deg);
+    stroke: var(--blue);
+}
+
 .input-choice {
     padding: 1.5rem 5.2rem;
     color: var(--white);
@@ -31,10 +49,17 @@
     width: 100%;
     box-shadow: 0px 0px 0px 1px var(--white);
     border-radius: 0.8rem;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.input-choice:hover {
+    box-shadow: 0px 0px 0px 2px var(--white);
 }
 
 .input-choice::placeholder {
     color: var(--white);
+    transition: color 0.3s ease;
 }
 
 .input-choice__icon {
@@ -52,6 +77,7 @@
     height: 100%;
     object-fit: cover;
     stroke: var(--white);
+    transition: stroke 0.3s ease;
 }
 
 .input-choice__arrow {
@@ -70,6 +96,7 @@
     height: 100%;
     object-fit: cover;
     stroke: var(--white);
+    transition: transform 0.3s ease, stroke 0.3s ease;
 }
 
 .input-choice__wrapper+.input-choice__wrapper {
@@ -102,6 +129,80 @@
 
 .air-datepicker-nav--action path {
     stroke: var(--blue);
+}
+
+.time-choice__wrapper {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 0.8rem;
+    width: 100%;
+    max-width: 25.6rem;
+}
+
+.time-choice {
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    box-shadow: 0px 8.26788px 33.0715px rgb(0 0 0 / 5%);
+    padding: 2.4rem 1.6rem;
+}
+
+.time-choice__head {
+    text-align: center;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.time-choice__head span {
+    letter-spacing: -0.254651px;
+    color: var(--black-light);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.time-choice__body {
+    margin-top: 1.2rem;
+    max-height: 20.2rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray) transparent;
+}
+
+.time-choice__body::-webkit-scrollbar {
+    width: 2px;
+}
+
+.time-choice__body::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+}
+
+.time-choice__body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+.time-choice__body-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    grid-row-gap: 0.8rem;
+    grid-column-gap: 0.9rem;
+}
+
+.time-choice__item {
+    display: inline-block;
+    background-color: var(--gray-light);
+    border-radius: 0.3rem;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.time-choice__item {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
 }
 
 /* КОНЕЦ СТИЛЕЙ СЕКЦИИ С ФОРМОЙ ЗАПИСИ */
