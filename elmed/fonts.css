@@ -88,3 +88,22 @@
     font-style: italic;
     src: url("fonts/UniNeueBlack-Italic.ttf");
 }
+
+@font-face {
+    font-weight: 400;
+    font-family: "Garamond";
+    src: url("fonts/GaramondRegular.TTF");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Garamond";
+    font-style: italic;
+    src: url("fonts/GaramondItalic.TTF");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Garamond";
+    src: url("fonts/GaramondBold.TTF");
+}
