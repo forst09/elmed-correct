@@ -912,6 +912,10 @@ a.icon-text:focus-within svg {
         font-size: 0.666668vw;
     }
 
+    .content-style {
+        max-width: 108.7rem;
+    }
+
     .wrapper {
         padding: 0 11.2rem;
     }
