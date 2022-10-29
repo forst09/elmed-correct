@@ -528,6 +528,7 @@ a.icon-text:focus-within svg {
 /* ШАПКА */
 .header {
     padding-top: 1.6rem;
+    margin-bottom: 4rem;
 }
 
 .header__container {
@@ -568,6 +569,31 @@ a.icon-text:focus-within svg {
 }
 
 /* КОНЕЦ ШАПКА */
+
+/*НАЧАЛО СТИЛЕЙ ФИКСИРОВАННОЙ ШАПКИ*/
+.header-fixed {
+    position: fixed;
+    visibility: hidden;
+    pointer-events: none;
+    top: -5.8rem;
+    -webkit-transition: top 0.5s ease-in-out;
+    -o-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 8.26788px 33.0715px rgba(58, 58, 58, 0.05);
+    margin: 0 !important;
+    opacity: 0;
+    background-color: var(--white);
+    padding: 0.8rem 0;
+}
+
+.header-fixed.active {
+    visibility: visible;
+    pointer-events: all;
+    top: 0;
+    opacity: 1;
+}
 
 /* ФУТЕР */
 .footer__logo {
@@ -749,6 +775,10 @@ a.icon-text:focus-within svg {
     }
 
     /* ШАПКА 668*/
+    .header {
+        margin-bottom: 5.2rem;
+    }
+
     .header__burger {
         width: 3.2rem;
         height: 3.2rem;
@@ -785,6 +815,17 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ ШАПКА 668*/
+
+    /*НАЧАЛО СТИЛЕЙ ФИКСИРОВАННОЙ ШАПКИ 668*/
+    .header-fixed {
+        padding: 1.2rem 0;
+        top: -8.5rem;
+    }
+
+    .header-fixed .header__logo {
+        width: 5.8rem;
+        height: 6.1rem;
+    }
 
     /* ФУТЕР 668*/
     .footer {
@@ -968,7 +1009,8 @@ a.icon-text:focus-within svg {
 
     /* ШАПКА 1024*/
     .header {
-        padding-top: 2.4rem;
+        padding-top: 3.6rem;
+        margin-bottom: 8.1rem;
     }
 
     .header__burger {
@@ -1013,6 +1055,12 @@ a.icon-text:focus-within svg {
     }
 
     /* КОНЕЦ ШАПКА 1024*/
+
+    /*НАЧАЛО СТИЛЕЙ ФИКСИРОВАННОЙ ШАПКИ 1024*/
+    .header-fixed {
+        padding: 1.6rem 0 !important;
+        top: -9.3rem;
+    }
 
     /* ФУТЕР 1024*/
     .footer {
@@ -1064,6 +1112,7 @@ a.icon-text:focus-within svg {
     /* ШАПКА 1500*/
     .header {
         padding-top: 4rem;
+        margin-bottom: 7.6rem;
     }
 
     .header__logo {

@@ -30,4 +30,36 @@ $(document).ready(function () {
         mask: '+7 (999) 999-99-99',
         showMaskOnHover: false
     });
+
+    //ФИКСИРОВАННАЯ ШАПКА НА СКРОЛЛЕ 
+    if ($('.header').length !== 0) {
+        let header = document.querySelector('.header');
+        let headerFix = document.querySelector('.header-fixed');
+        let headerHeight = header.clientHeight + 200;
+        document.onscroll = function () {
+            let scroll = window.scrollY;
+
+            if (scroll > headerHeight) {
+                headerFix.classList.add('active');
+            }
+            else {
+                headerFix.classList.remove('active');
+            }
+        };
+    };
+
+    // Anchor
+    const anchorScroll = function (e, _this) {
+        e.preventDefault();
+        let elementClick = _this.attr("href");
+        let destination = $(elementClick).offset().top - 200;
+        jQuery("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+        }, 1000);
+        return false;
+    };
+
+    $(document).on('click', '.header__menu-link', function (e) {
+        anchorScroll(e, $(this));
+    });
 });
