@@ -525,6 +525,10 @@ a.icon-text:focus-within svg {
     display: none;
 }
 
+.scroll-hidden {
+    overflow-y: hidden;
+}
+
 /* ШАПКА */
 .header {
     padding-top: 1.6rem;
@@ -594,6 +598,91 @@ a.icon-text:focus-within svg {
     top: 0;
     opacity: 1;
 }
+
+/*КОНЕЦ СТИЛЕЙ ФИКСИРОВАННОЙ ШАПКИ*/
+
+/* НАЧАЛО СТИЛЕЙ МОБ МЕНЮ */
+.mob-menu__bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #393939;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    left: -100vw;
+    transition: opacity 0.6s ease;
+}
+
+.mob-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    z-index: 1001;
+    left: -100vw;
+    transition: 0.6s ease;
+}
+
+.mob-menu.active,
+.mob-menu__bg.active {
+    left: 0;
+}
+
+.mob-menu__bg.active {
+    opacity: 0.2;
+}
+
+.mob-menu__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    margin-bottom: 4.8rem;
+}
+
+.mob-menu__close {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.mob-menu__close svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    stroke: var(--gray);
+}
+
+.mob-menu .icon-text {
+    align-items: center;
+}
+
+.mob-menu .icon-text svg {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: 0;
+}
+
+.mob-menu .icon-text span {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.mob-menu__links-item+.mob-menu__links-item {
+    margin-top: 3.2rem;
+}
+
+.mob-menu__links-link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+/* КОНЕЦ СТИЛЕЙ МОБ МЕНЮ */
 
 /* ФУТЕР */
 .footer__logo {
@@ -826,6 +915,30 @@ a.icon-text:focus-within svg {
         width: 5.8rem;
         height: 6.1rem;
     }
+
+    /*КОНЕЦ СТИЛЕЙ ФИКСИРОВАННОЙ ШАПКИ 668*/
+
+    /* НАЧАЛО СТИЛЕЙ МОБ МЕНЮ 668*/
+    .mob-menu {
+        width: 86vw;
+    }
+
+    .mob-menu__head {
+        padding-top: 3.2rem;
+        margin-bottom: 6.2rem;
+    }
+
+    .mob-menu__close {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .mob-menu__links-link {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    /* КОНЕЦ СТИЛЕЙ МОБ МЕНЮ 668*/
 
     /* ФУТЕР 668*/
     .footer {
