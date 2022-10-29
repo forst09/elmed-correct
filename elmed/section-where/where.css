@@ -4,9 +4,12 @@
 }
 
 .footnote {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 1.2rem;
     background: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(23px);
     backdrop-filter: blur(23px);
     border-radius: 1.6rem;
 }
@@ -15,6 +18,7 @@
     width: 2.4rem;
     height: 2.4rem;
     stroke: var(--blue);
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 0.8rem;
 }
@@ -47,6 +51,8 @@
 
     .footnote {
         padding: 1.6rem 5.4rem 1.6rem 3.2rem;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -57,6 +63,7 @@
     .where__info-blur::after {
         width: 14.4rem;
         height: 14.4rem;
+        -webkit-filter: blur(100px);
         filter: blur(100px);
         left: -10rem;
         top: 11rem;
@@ -68,14 +75,23 @@
 /* НАЧАЛО СТИЛЕЙ СЕКЦИИ ГДЕ ВЫ МОЖЕТЕ ВОСПОЛЬЗОВАТЬСЯ  ЛЕЧЕБНО-ПРОФИЛАКТИЧЕСКИМ АППАРАТОМ ELMEDLIFE? 1024*/
 @media(min-width:1024px) {
     .where__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
 
     .where__info {
         max-width: 45.1rem;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -108,6 +124,7 @@
         background-color: var(--light-blue);
         bottom: -4rem;
         left: 41rem;
+        -webkit-filter: blur(100px);
         filter: blur(100px);
     }
 }

@@ -27,6 +27,7 @@
         background: rgba(255, 255, 255, 0.6);
         -webkit-backdrop-filter: blur(23px);
         backdrop-filter: blur(23px);
+        -ms-flex-item-align: center;
         align-self: center;
     }
 

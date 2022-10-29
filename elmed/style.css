@@ -50,7 +50,11 @@ section+div {
 }
 
 .btn-arrow {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -72,6 +76,8 @@ section+div {
     width: 1.6rem;
     height: 1.6rem;
     stroke: var(--blue);
+    -webkit-transition: stroke 0.3s ease;
+    -o-transition: stroke 0.3s ease;
     transition: stroke 0.3s ease;
     margin-right: 0.8rem;
 }
@@ -80,6 +86,8 @@ section+div {
     font-size: 1.4rem;
     line-height: 2.2rem;
     color: var(--blue);
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
     font-weight: 400;
 }
@@ -211,14 +219,22 @@ section+div {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    -webkit-transform: translateY(2%);
+    -ms-transform: translateY(2%);
     transform: translateY(2%);
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.4s ease;
+    transition: opacity 0.3s ease, -webkit-transform 0.4s ease;
+    -o-transition: opacity 0.3s ease, transform 0.4s ease;
     transition: opacity 0.3s ease, transform 0.4s ease;
+    transition: opacity 0.3s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
 .hide.active {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
 }
 
@@ -436,8 +452,8 @@ a.icon-text:focus-within svg {
 }
 
 .btn:hover {
-    background: -webkit-gradient(linear, left top, right top, from(#006DB8), to(#0097FF));
     background: -o-linear-gradient(left, #006DB8 0%, #0097FF 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#006DB8), to(#0097FF));
     background: linear-gradient(90deg, #006DB8 0%, #0097FF 100%);
     -webkit-box-shadow: 0px 0px 10px rgba(0, 109, 184, 0.25);
     box-shadow: 0px 0px 10px rgba(0, 109, 184, 0.25);
@@ -473,7 +489,12 @@ a.icon-text:focus-within svg {
 }
 
 .input__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--gray);
@@ -501,6 +522,30 @@ a.icon-text:focus-within svg {
     color: var(--blue);
 }
 
+.input::-webkit-input-placeholder {
+    color: var(--gray);
+    font-weight: 300;
+    font-family: 'UniNeue';
+}
+
+.input::-moz-placeholder {
+    color: var(--gray);
+    font-weight: 300;
+    font-family: 'UniNeue';
+}
+
+.input:-ms-input-placeholder {
+    color: var(--gray);
+    font-weight: 300;
+    font-family: 'UniNeue';
+}
+
+.input::-ms-input-placeholder {
+    color: var(--gray);
+    font-weight: 300;
+    font-family: 'UniNeue';
+}
+
 .input::placeholder {
     color: var(--gray);
     font-weight: 300;
@@ -509,6 +554,22 @@ a.icon-text:focus-within svg {
 
 .input__wrapper+.input__wrapper {
     margin-top: 2.4rem;
+}
+
+.input__wrapper--white .input::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+.input__wrapper--white .input::-moz-placeholder {
+    color: var(--white);
+}
+
+.input__wrapper--white .input:-ms-input-placeholder {
+    color: var(--white);
+}
+
+.input__wrapper--white .input::-ms-input-placeholder {
+    color: var(--white);
 }
 
 .input__wrapper--white .input::placeholder,
@@ -536,8 +597,14 @@ a.icon-text:focus-within svg {
 }
 
 .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -550,6 +617,7 @@ a.icon-text:focus-within svg {
 .header__burger svg {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     stroke: var(--blue);
 }
@@ -563,6 +631,7 @@ a.icon-text:focus-within svg {
 .header__logo img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -585,6 +654,7 @@ a.icon-text:focus-within svg {
     transition: top 0.5s ease-in-out;
     z-index: 1000;
     width: 100%;
+    -webkit-box-shadow: 0px 8.26788px 33.0715px rgba(58, 58, 58, 0.05);
     box-shadow: 0px 8.26788px 33.0715px rgba(58, 58, 58, 0.05);
     margin: 0 !important;
     opacity: 0;
@@ -611,6 +681,8 @@ a.icon-text:focus-within svg {
     top: 0;
     z-index: 1000;
     left: -100vw;
+    -webkit-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease;
 }
 
@@ -623,6 +695,8 @@ a.icon-text:focus-within svg {
     background-color: var(--white);
     z-index: 1001;
     left: -100vw;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
     transition: 0.6s ease;
 }
 
@@ -636,8 +710,14 @@ a.icon-text:focus-within svg {
 }
 
 .mob-menu__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 2.5rem;
     margin-bottom: 4.8rem;
@@ -652,11 +732,14 @@ a.icon-text:focus-within svg {
 .mob-menu__close svg {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     stroke: var(--gray);
 }
 
 .mob-menu .icon-text {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -887,6 +970,8 @@ a.icon-text:focus-within svg {
     }
 
     .header__consultation .icon-text {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1140,8 +1225,14 @@ a.icon-text:focus-within svg {
     }
 
     .header__menu-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -1150,6 +1241,8 @@ a.icon-text:focus-within svg {
         font-size: 1.4rem;
         line-height: 2.2rem;
         color: var(--blue);
+        -webkit-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
         transition: color 0.3s ease;
     }
 
